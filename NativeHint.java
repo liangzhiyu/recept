@@ -50,20 +50,20 @@ public @interface NativeHint {
 	 * The trigger is ignored for initialization configuration.
 	 * @return the class that acts as a trigger
 	 */
-	Class<?> trigger() default Object.class;
+		Class<?> trigger() default Object.class;
 
 	/**
 	 * A set of type information which indicate which types should be made accessible (as via reflection and/or *.class
 	 * resources) if the trigger is active.
 	 * @return the type information
 	 */
-	TypeHint[] types() default {};
+		TypeHint[] types() default {};
 
 	/**
 	 * A set of proxy information which indicate which sets of types need a proxy if the trigger is active.
 	 * @return the proxy information
 	 */
-	ProxyHint[] proxies() default {};
+		ProxyHint[] proxies() default {};
 	
 	/**
 	 * A set of resource information which specify which resources need including if the trigger is active.
